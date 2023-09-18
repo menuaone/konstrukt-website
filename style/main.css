@@ -61,11 +61,25 @@ body {
 
 }
 
-
-
 .navbar li a:hover {
     color: var(--main-click);
     font-weight: 600;
     transition: color .2s linear;
 }
 
+/* Our story */
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.story__inner {
+    display: flex;
+}
+
+.story__img{
+    display: flex;
+}
