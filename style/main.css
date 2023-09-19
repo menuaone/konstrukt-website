@@ -8,10 +8,16 @@ html {
     box-sizing: inherit;
 }
 
+/* Переменные */
 :root {
     --main-text: #48555B;
     --main-click: #00A4E5;
+    --dif-color: #ffff;
   }
+
+h1, h2, h3, h4, h5, h6,p {
+    margin: 0px;
+}
 
 body {
     margin: 0;
@@ -69,17 +75,91 @@ body {
 
 /* Our story */
 
-h1 {
+.story h1 {
     text-align: center;
+    color: var(--main-text);
     text-transform: uppercase;
+
     font-weight: 700;
     font-size: 18px;
+
+    padding-top: 57px;
+    margin-bottom: 10px;
+   
+}
+
+.stroke {
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-click);
+    margin: 0 auto;
+
+    margin-bottom: 80px;
 }
 
 .story__inner {
     display: flex;
+
 }
 
-.story__img{
+.story__left {
+    margin-right: 77px;
+}
+
+.story__title {
+    color: var(--main-text);
+    font-size: 20px;
+    font-weight: 700;
+    
+    max-width: 400px;
+    height: 81px;
+
+    margin-bottom: 40px;
+}
+
+.story__title span {
+    color: var(--main-click);
+
+}
+.story__text {
+    color: var(--main-text);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+
+    max-width: 400px;
+    height: 115px;
+
+    /* padding-top: 30px; */
+}
+
+.story__right{
     display: flex;
+    align-items: flex-end;
+}
+
+.story__item{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--dif-color);
+    font-weight: 800;
+
+    width: 140px;
+    height: 224px;
+
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.story__item:nth-child(1){
+    background-image: url(../source/weplan.png);
+}
+
+.story__item:nth-child(2){
+    background-image: url(../source/wemanage.png);
+}
+
+.story__item:nth-child(3){
+    background-image: url(../source/webuild.png);
+    margin-right: 0;
 }
