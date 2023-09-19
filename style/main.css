@@ -12,6 +12,7 @@ html {
 :root {
     --main-text: #48555B;
     --main-click: #00A4E5;
+    --sec-click: #00668e;
     --dif-color: #ffff;
   }
 
@@ -46,7 +47,6 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-   
 }
 
 .navbar li{
@@ -197,10 +197,13 @@ h1 {
 
 
 .button {
-    background-color: var(--main-click);
+    font-family: 'Open Sans', sans-serif;
 
-    width: 150px;
+    min-width: 150px;
     height: 40px;
+
+    background-color: var(--main-click);
+    border: none;
 
     color: var(--dif-color);
     text-transform: uppercase;
@@ -208,7 +211,120 @@ h1 {
     font-style: normal;
     font-weight: 700;
 
-    border: none;
+    /* нужно для оптимизации */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 
-    font-family: 'Open Sans', sans-serif;
+/* обязательные поля для button */
+
+/* Наведение на кнопку */
+.button:hover {
+    /* background-color: var(--sec-click);
+    transition: background-color .2s linear; */
+    cursor: pointer;
+}
+
+/* Фокусировка на кнопке */
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #cbd6ee;
+  }
+
+/* Нажатие на кнопку */
+.button:active { /* Добавляем псевдокласс :active */
+    background-color: var(--sec-click);
+    box-shadow: 0 2px --main-text;
+    transform: translateY(4px);     /* Движение кнопки вниз */
+}
+
+/* Info */
+
+.info {
+    padding-top: 80px;
+}
+.info__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.info__card {
+    width: 295px;
+    height: 330px;
+
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+}
+
+.card__inner{
+    padding: 38px 23px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info__img {
+    margin-bottom: 25px;
+
+    width: 65.625px;
+    height: 75px;
+}
+.info__title {
+    margin-bottom: 13px;
+
+    color: var(--main-text);
+    font-size: 15px;
+    font-weight: 700;
+
+    min-width: 250px;
+    min-height: 48px;
+}
+.info__text {
+    color: var(--main-text);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+
+    min-width: 250px;
+    min-height: 92px;
+}
+
+/* Get in touch */
+
+.getintouch {
+    padding-top: 120px;
+
+    background: url(../source/bg.png);
+}
+
+.get__title {
+    width: 350px;
+    height: 72px;
+
+    color: var(--main-text);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+
+ 
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.get__link{
+    text-align: center;
+
+    padding-bottom: 244px;
+}
+
+.get__formbutton {
+    padding: 11px 26px;
+    background-color: var(--main-click);
+
+    color: var(--dif-color);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
 }
