@@ -327,4 +327,82 @@ h1 {
     font-size: 13px;
     font-weight: 700;
     text-decoration: none;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .get__formbutton:hover {
+    background-color: var(--sec-click);
+  }
+
+/* News */
+
+.news{
+    background-color: #171819;;
+}
+.input__inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+.news__title {
+    color: var(--dif-color);
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.846px;
+}
+
+/* input form */
+.input__group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input {
+    min-height: 40px;
+
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 98px;
+
+    color: var(--main-text);
+    font-size: 15px;
+
+    border: 1px solid var(--main-click);
+  }
+  
+.button__submit {
+    min-height: 40px;
+    width: 150px;
+
+    padding: 11px 49px;
+
+    color: #fff;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+
+    border: none;
+    background-color: var(--main-click);
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .button__submit:hover {
+    background-color: var(--sec-click);
+  }
+  
+  .input:focus, .input:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+  }
+
+/* Нажатие на кнопку */
+.button__submit:active { /* Добавляем псевдокласс :active */
+    background-color: var(--sec-click);
+    box-shadow: 0 2px --main-text;
+    transform: translateY(0.5px);     /* Движение кнопки вниз */
 }
