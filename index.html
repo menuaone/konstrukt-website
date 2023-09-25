@@ -18,7 +18,7 @@
     
             <h1 class="screensaver__title">Partner with konstruct</h1>
             <p class="screensaver__text">An award-winning construction management firm</p>
-            <a  href="#header" class="screensaver__link">
+            <a  href="#header" class="screensaver__link ">
                 <p class="screensaver__link-text">Scroll down</p>
             </a>
         </div>
@@ -28,17 +28,26 @@
         <div class="container">
             <div class="header__inner">
 
+              
                 <div class="header__logo">
                     <img src="source/projeco-logo-black.svg" alt="logo_konstrukt">
                 </div>
-        
-                <ul class="navbar">
-                    <li class="navbar__item"><a class="navbar__item-link" href="#">home</a></li>
-                    <li class="navbar__item"><a class="navbar__item-link" href="#">about</a></li>
-                    <li class="navbar__item"><a class="navbar__item-link" href="#">services</a></li>
-                    <li class="navbar__item"><a class="navbar__item-link" href="#">work</a></li>
-                    <li class="navbar__item"><a class="navbar__item-link" href="#">contact</a></li>
-                </ul>
+
+                <label class="toggle-btn" onclick="myFunction();">
+                    <i class="fa-solid fa-bars"></i>
+               </label>
+
+
+            
+<nav id="nav">
+                    <ul class="navbar" >
+                        <li class="navbar__item"><a class="navbar__item-link" href="#">home</a></li>
+                        <li class="navbar__item"><a class="navbar__item-link" href="#">about</a></li>
+                        <li class="navbar__item"><a class="navbar__item-link" href="#">services</a></li>
+                        <li class="navbar__item"><a class="navbar__item-link" href="#">work</a></li>
+                        <li class="navbar__item"><a class="navbar__item-link" href="#">contact</a></li>
+                    </ul>
+</nav>
             </div>
         </div>
     </header>
@@ -248,6 +257,14 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        function myFunction(){
+        let navbar = document.getElementById('nav');
+
+        navbar.classList.toggle('show')
+        }
+    </script>
 
 </body>
 </html>
