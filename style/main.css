@@ -113,12 +113,14 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 25px 0;
+    padding: 25px 0 20px 0;
+
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .header__logo img{
     position: absolute;
-    top: 20px;
+    top: 27px;
     left: 50px;
     height: 18px;
     width: 79px;
@@ -253,6 +255,7 @@ h1 {
 
     padding: 15px;
     margin-right: 20px;
+
 }
 
 .story__item:nth-child(1){
@@ -268,6 +271,9 @@ h1 {
     margin-right: 0;
 }
 
+.story__item:hover{
+    cursor: pointer;
+}
 /* Our Capabilities */
 
 .capabilities{
@@ -402,7 +408,9 @@ h1 {
     background-image: url(../source/bg.png);
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
+    background-size: cover;
+    height: 440px;
+    width: 100%;
 }
 
 .get__inner{
@@ -652,8 +660,17 @@ i {
         padding: 0 20px;
     }
 
+    .header__inner{
+        padding-bottom: 30px;
+    }
+
+    .header__logo img{
+        top: 22px;
+    }
+
     .toggle-btn i{
         display: block;
+        padding-bottom: 20px;
     }
 
     nav {
