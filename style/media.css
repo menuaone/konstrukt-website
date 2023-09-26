@@ -1,0 +1,237 @@
+/* Медиа Запросы */
+
+@media screen and (max-width:1440px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .header__inner{
+        padding-bottom: 30px;
+    }
+
+    .header__logo img{
+        top: 22px;
+    }
+
+    .toggle-btn i{
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.show{
+        width: 100%;
+        border-top: 2px solid var(--main-click);
+        padding-top: 20px;
+        margin-top: 30px;
+        display: block;
+    }
+
+    .navbar{
+        justify-content: center;
+    }
+    .story__inner{
+        justify-content: center;
+        /* позволяет переносить объекту на другую строку */
+        flex-wrap: wrap; 
+    }
+
+    .cap__inner{
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:980px) {
+
+    .story h1{
+        padding-top: 30px;
+    }
+
+    .story__left{
+
+        margin-right: 15px;
+    }
+
+}
+
+@media screen and (max-width:905px) {
+    .story__right{
+        margin-top: 15px;
+    }
+
+    .info__inner{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .cap__inner{
+        padding: 0 25px;
+        justify-content: space-evenly;
+    }
+
+    .cap__right{
+        align-items: center;
+    }
+
+    .info__card:last-child{
+        margin-top: 20px;
+    }
+
+    .get__inner{
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .footer__inner{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:650px){
+
+    .screensaver__logo{
+        padding-top: 20px;
+    }
+    
+    .screensaver__text{
+        margin-bottom: 210px;
+    }
+    .screensaver__link-text{
+        padding-bottom: 20px;
+    }
+
+    .cap__text{
+        display: flex;
+        max-width: 300px;
+        text-align: justify;
+        align-items: center;
+    }
+
+    .info{
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width:598px){
+
+    .capabilities{
+        padding-top: 50px;
+    }
+    .cap__inner{
+        flex-wrap: wrap;
+    }
+
+    .cap__left{
+        margin-bottom: 30px;
+    }
+
+    .info__card:nth-child(2){
+        margin-top: 20px;
+    }
+
+    .input__inner{
+        flex-wrap: wrap;
+    }
+
+    .news__title{
+        margin-right: 0;
+        padding: 0 15px;
+    }
+
+    .input__group{
+        margin-top: 10px;
+    }
+
+}
+@media screen and (max-width:500px) {
+    .story__right{
+        /* позволяет переносить объекту на другую строку */
+        flex-wrap: wrap; 
+    }
+
+    .story__item{
+        margin-bottom: 25px;
+    }
+    .story__item:nth-child(3){
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .screensaver__logo{
+        margin-bottom: 200px;
+    }
+
+    .screensaver__title{
+        margin-bottom: 25px;
+    }
+
+    .screensaver__text{
+        max-width: 300px;
+    }
+
+    .cap__right{
+        margin-top: 20px;
+    }
+
+    .input {
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 390px){
+
+    .screensaver__text{
+        margin-bottom: 60px;
+    }
+
+    .screensaver__link-text{
+        padding-bottom: 80px;
+    }
+
+    .navbar{
+        flex-wrap: wrap;
+    }
+
+    .story__right{
+        margin-top: 40px;
+    }
+
+    .cap__right{
+        margin-top: 40px;
+    }
+
+    .input__group{
+        margin-top: 20px;
+    }
+
+    .input {
+        padding-right: 10px;
+    }
+
+    .footer__inner{
+        flex-direction: column;
+    }
+
+    .footer .links{
+        margin-top: 10px;
+    }
+
+    .footer .contacts{
+        margin-top: 10px;
+    }
+
+    .footer .social__media{
+        padding-left: 0;
+    }
+}

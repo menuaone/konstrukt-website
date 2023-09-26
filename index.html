@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/all.min.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/media.css">
     <title>konstrukt</title>
 </head>
 <body>
 
     <section class="screensaver">
         <div class="container">
-            
             <div class="screensaver__logo">
                 <img class="logo__item" src="source/company-logo-white.svg" alt="logo_konstrukt">
             </div>
@@ -21,6 +21,7 @@
             <a  href="#header" class="screensaver__link ">
                 <p class="screensaver__link-text">Scroll down</p>
             </a>
+
         </div>
     </section>
     
@@ -173,10 +174,22 @@
 
                 <h2 class="news__title">Newsletter Signup</h2>
 
-                <div class="input__group">
-                    <input type="email" class="input" id="Email" name="Email" placeholder="test@youremail.com" autocomplete="off">
-                    <input class="button__submit" value="SIGNUP" type="submit">
-                </div>
+                <form class="input__group" name="form">
+                    <input 
+                    type="email" 
+                    class="input" 
+                    id="Email" 
+                    name="Email" 
+                    placeholder="test@youremail.com" 
+                    autocomplete="off" 
+                    data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+                    <input 
+                    class="button__submit" 
+                    value="SIGNUP" 
+                    type="submit" 
+                    id="button"
+                    name="button">
+                </form>
 
             </div>
         </div>
@@ -258,15 +271,7 @@
         </div>
     </footer>
 
-    <script type="text/javascript">
-        function myFunction(){
-        let navbar = document.getElementById('nav');
-
-        navbar.classList.toggle('show')
-        }
-
-        
-    </script>
+    <script type="text/javascript" src="script/script.js"></script>
 
 </body>
 </html>
