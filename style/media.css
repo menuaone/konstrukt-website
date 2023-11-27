@@ -1,12 +1,47 @@
 /* Медиа Запросы */
 
 @media screen and (max-width:1440px) {
+
+    .screen__inner{
+        row-gap: 50px;
+    }
+
+    .screensaver__logo{
+        margin-bottom: 120px;
+    }
+
+    .screensaver__text{
+        margin-bottom: 150px;
+    }
+
+    .header__logo img{
+        left: 40px;
+
+    }
+
     .container {
         padding: 0 50px;
     }
 }
 
 @media screen and (max-width:1025px) {
+    .screen__inner{
+        row-gap: 50px;
+    }
+
+    .screensaver__logo{
+        margin-bottom: 100px;
+    }
+
+    .screensaver__text{
+        margin-bottom: 90px;
+    }
+
+    .header__logo img{
+        left: 40px;
+
+    }
+
     .container {
         padding: 0 20px;
     }
@@ -52,6 +87,23 @@
 
 @media screen and (max-width:980px) {
 
+    .screen__inner{
+        row-gap: 50px;
+    }
+
+    .screensaver__logo{
+        margin-bottom: 100px;
+    }
+
+    .screensaver__text{
+        margin-bottom: 150px;
+    }
+
+    .header__logo img{
+        left: 40px;
+
+    }
+
     .story h1{
         padding-top: 30px;
     }
@@ -64,6 +116,24 @@
 }
 
 @media screen and (max-width:905px) {
+
+    .screen__inner{
+        row-gap: 50px;
+    }
+
+    .screensaver__logo{
+        margin-bottom: 100px;
+    }
+
+    .screensaver__text{
+        margin-bottom: 90px;
+    }
+
+    .header__logo img{
+        left: 40px;
+
+    }
+
     .story__right{
         margin-top: 15px;
     }
@@ -124,6 +194,23 @@
 
 @media screen and (max-width:598px){
 
+    .screen__inner{
+        row-gap: 50px;
+    }
+
+    .screensaver__logo{
+        margin-bottom: 100px;
+    }
+
+    .screensaver__text{
+        margin-bottom: 90px;
+    }
+
+    .header__logo img{
+        left: 40px;
+
+    }
+
     .capabilities{
         padding-top: 50px;
     }
@@ -154,23 +241,55 @@
 
 }
 @media screen and (max-width:500px) {
+    .screen__inner{
+        row-gap: 50px;
+    }
+
+    .screensaver__logo{
+        margin-bottom: 100px;
+    }
+
+    .screensaver__text{
+        margin-bottom: 90px;
+    }
+
+    .header__logo img{
+        left: 40px;
+
+    }
     .story__right{
         /* позволяет переносить объекту на другую строку */
         flex-wrap: wrap; 
     }
 
-    .story__item{
+    /* .story__item{
         margin-bottom: 25px;
     }
+    
     .story__item:nth-child(3){
         margin-bottom: 0;
-    }
+    } */
 }
 
 @media screen and (max-width: 420px) {
-    .screensaver__logo{
-        margin-bottom: 200px;
+
+    .screen__inner{
+        row-gap: 50px;
     }
+
+    .screensaver__logo{
+        margin-bottom: 100px;
+    }
+
+    .screensaver__text{
+        margin-bottom: 90px;
+    }
+
+    .header__logo img{
+        left: 40px;
+
+    }
+    /* 
 
     .screensaver__title{
         margin-bottom: 25px;
@@ -178,7 +297,8 @@
 
     .screensaver__text{
         max-width: 300px;
-    }
+    } */
+
 
     .cap__right{
         margin-top: 20px;
@@ -191,12 +311,16 @@
 
 @media screen and (max-width: 390px){
 
+    .screen__inner{
+        row-gap: 50px;
+    }
     .screensaver__text{
-        margin-bottom: 60px;
+        margin-bottom: 90px;
     }
 
-    .screensaver__link-text{
-        padding-bottom: 80px;
+    .header__logo img{
+        left: 40px;
+
     }
 
     .navbar{

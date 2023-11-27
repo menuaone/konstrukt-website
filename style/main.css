@@ -30,7 +30,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 0 250px;
 }
@@ -38,29 +38,41 @@ body {
 /* Screensaver */
 
 .screensaver{
-    max-width: 1440px;
+    max-width: 1920px;
     background-image: url(../source/bgscreen.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
-    height: 100%;
+    height: 100vh;
 
     margin: 0 auto;
+}
 
+.screen__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 350px;
 }
 
 .screensaver__logo {
-    display: flex;
+
     padding-top: 40px;
-    margin-bottom: 300px;
 
     z-index: 1;
-}
+} 
+
 .logo__item {
     display: block;
     width: 101.62px;
     height: 23px;
-    margin: 0 auto;
+
+}
+
+.screen__title{
+    margin-bottom: 20px;
 }
 
 .screensaver__title {
@@ -74,30 +86,31 @@ body {
     color: var(--dif-color);
     text-transform: uppercase;
 
-    margin-bottom: 1px;
+
 }
+
 .screensaver__text {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     color: var(--dif-color);
 
-    margin: 0 auto 223px;
-
 }
+
 .screensaver__link {
     text-decoration: none;
     text-transform: uppercase;
 
 }
+
 .screensaver__link-text {
     text-align: center;
     font-size: 11px;
     line-height: 13px;
     letter-spacing: 3.7px;
     color: var(--dif-color);
-    padding-bottom: 72px;
-}
+    /* padding-bottom: 72px; */
+} 
 
 
 /* Header */
@@ -121,7 +134,7 @@ header {
 .header__logo img{
     position: absolute;
     top: 27px;
-    left: 50px;
+    left: 250px;
     height: 18px;
     width: 79px;
 }
@@ -162,7 +175,7 @@ header {
     font-size: 12px;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: 3.7px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     text-decoration: none;
 }
